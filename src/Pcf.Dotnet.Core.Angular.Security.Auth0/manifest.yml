@@ -1,0 +1,6 @@
+﻿---
+applications:
+- name: pcf-dotnet-core-angular-security-auth0
+  buildpack: dotnet_core_buildpack
+  stack: cflinuxfs3
+  memory: 512M

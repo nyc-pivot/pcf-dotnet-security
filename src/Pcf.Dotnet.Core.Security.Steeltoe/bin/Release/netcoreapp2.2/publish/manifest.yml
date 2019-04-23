@@ -1,0 +1,10 @@
+﻿---
+applications:
+- name: pcf-dotnet-core-security-steeltoe
+  buildpack: dotnet_core_buildpack
+  stack: cflinuxfs3
+  memory: 512M
+  services:
+  - pcf-sso
+  env:
+    SSO_REDIRECT_URIS: http://pcf-dotnet-core-security-steeltoe.cfapps.io/signin-cloudfoundry,https://pcf-dotnet-core-security-steeltoe.cfapps.io/signin-cloudfoundry

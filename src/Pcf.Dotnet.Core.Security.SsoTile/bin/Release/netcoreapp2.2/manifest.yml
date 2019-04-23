@@ -1,0 +1,8 @@
+﻿---
+applications:
+- name: pcf-dotnet-core-security-sso
+  buildpack: dotnet_core_buildpack
+  stack: cflinuxfs3
+  memory: 512M
+  services:
+  - pcf-sso
